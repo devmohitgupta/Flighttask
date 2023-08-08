@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<body >
+
+
+<style>
+
+h1 {
+        border-style: solid;
+
+      }
+      
+        h2 {
+                border-style: solid;
+              }
+        
+        
+  </style>
+
+<h1>Flight Search Engine</h1>
+
+<form style="width: 100%;">
+    <div style="width: 30%;float: left;"> 
+      <button type="button" onclick="alert('Hello world!')">One way</button>
+      <button type="button" onclick="alert('Hello world!')">Return</button><br><br>
+        <input type="text" placeholder="Enter Origin City" id="City"><br><br> 
+        <input type="text" placeholder="Enter Destination city"id="Destination"><br><br>
+        <input type="date" placeholder="Departure date"id="date"><br><br>
+        <input type="date"  placeholder="Return date"id="date2"><br><br>
+        <input type="Passengers"placeholder="Passengers"id="Passengers"><br><br>
+          <input type="submit" value="Search"  onclick="takevalue(event)">
+
+
+    </div>
+
+  </form>
+
+    <div style="margin-left:30%; height:50px; "> 
+     <table style="width:70%; height: 100%;">
+      <h2>Pune > DELHI > PUNE</h2>
+     <td><h3>Rs.9500</h3></td>  
+<tr>
+      <td>AI-202</td>
+      <td>AI-203</td>
+</tr>
+     <tr>
+        <td>PNQ > DEL</td>
+        <td>DEL > PNQ</td>
+        </tr>
+        <tr>
+            <td>Depart:10:00 AM</td>
+            <td>Depart:11:50 AM</td>
+        </tr>
+        <tr>
+            <td>Arive:13:00 PM</td>
+            <td>Arive:16:00 PM</td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+
+        <tr>
+          <td><h4>Rs.9500</h4></td>
+          <tr></tr>
+          <tr></tr>
+  
+    </tr>
+    <tr>
+      <td>AI-204</td>
+      <td>AI-205</td>
+</tr>
+         <tr>
+            <td>PNQ > DEL</td>
+            <td>DEL > PNQ</td>
+            </tr>
+            <tr>
+                <td>Depart:11:00 AM</td>
+                <td>Depart:1:50 PM</td>                
+            </tr>
+            <tr>
+                <td>Arive:15:00 PM</td>
+                <td>Arive:17:00 PM</td>
+            </tr>
+
+  </table>
+   </div>
+  </html>
+  </body>
+  <script type="">
+    var records=[{
+    
+    "Code":"AI-202",
+    "Name":"Pune",
+    "Destination":"Delhi",
+    "Depart":"PNQ",
+    "Arrive":"DEL",
+    "Departdate":"01-01-2012",
+    "Arrivedate":"10-01-2012",
+    "Departtime":"10:00AM",
+    "Arrivetime":"13:00PM",
+    },
+    {
+    
+     "Code":"AI-203",
+     "Name":"Delhi",
+     "Destination":"Puna",
+     "Depart":"DEL",
+     "Arrive":"PNQ",
+     "Departdate":"01-01-2012",
+     "Arrivedate":"10-01-2012",
+     "Departtime":"11:50AM",
+     "Arrivetime":"16:00PM",
+    
+    }]
+    
+         function takevalue(event){
+          event.preventDefault(); 
+
+            var City =document.getElementById("City").value;
+            var Destination =document.getElementById("Destination").value;
+            var date =document.getElementById("date").value;
+            var date2 =document.getElementById("date2").value;
+            var Passengers =document.getElementById("Passengers").value;
+        
+    
+    
+    
+           for (let index = 0; index < records.length; index++) {
+            const des = records[index].Destination;
+            const na = records[index].Name;
+            const dep = records[index].Departdate;
+
+            if(City ==na && Destination ==des){
+            }
+           }
+
+
+
+
+
+         }
+
+    
+    
+    </script>
